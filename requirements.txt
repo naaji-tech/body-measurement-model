@@ -1,0 +1,39 @@
+# FastAPI & Server Dependencies
+fastapi
+uvicorn
+mangum
+gunicorn
+python-multipart
+
+# Machine Learning & AI Models
+torch
+torchvision
+torchaudio
+smplx
+mediapipe
+opencv-python
+numpy
+scipy
+
+# Depth Estimation (MiDaS)
+torchvision
+timm
+onnxruntime
+
+# Cloud & Storage
+boto3
+google-cloud-storage
+requests
+
+# Data Processing & Utilities
+pandas
+matplotlib
+Pillow
+trimesh 
+pyrender
+tqdm
+configargparse
+PyYAML
+torchgeometry
+scikit-learn
+plotly
