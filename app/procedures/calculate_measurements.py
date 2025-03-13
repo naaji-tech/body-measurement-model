@@ -24,4 +24,5 @@ def calculate_measurements(user_height: float, user_gender: str, betas: torch.te
     print("Labeled measurements")
     pprint(measurer.height_normalized_labeled_measurements)
     
-    return  measurer.height_normalized_measurements
+    rounded_measurements = {k: round(v, 2) for k, v in measurer.height_normalized_labeled_measurements.items()}
+    return rounded_measurements

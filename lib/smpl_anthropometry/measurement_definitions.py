@@ -1,22 +1,22 @@
 from .landmark_definitions import SMPL_LANDMARK_INDICES, SMPLX_LANDMARK_INDICES
 
 STANDARD_LABELS = {
-    "A": "head circumference",
-    "B": "neck circumference",
-    "C": "shoulder to crotch height",
-    "D": "chest circumference",
-    "E": "waist circumference",
-    "F": "hip circumference",
-    "G": "wrist right circumference",
-    "H": "bicep right circumference",
-    "I": "forearm right circumference",
-    "J": "arm right length",
-    "K": "inside leg height",
-    "L": "thigh left circumference",
-    "M": "calf left circumference",
-    "N": "ankle left circumference",
-    "O": "shoulder breadth",
-    "P": "height",
+    "head_circumference": "head circumference",
+    "neck_circumference": "neck circumference",
+    "shoulder_to_crotch_height": "shoulder to crotch height",
+    "chest_circumference": "chest circumference",
+    "waist_circumference": "waist circumference",
+    "hip_circumference": "hip circumference",
+    "wrist_circumference": "wrist right circumference",
+    "bicep_circumference": "bicep right circumference",
+    "forarm_circumference": "forearm right circumference",
+    "arm_length": "arm right length",
+    "inside_leg_height": "inside leg height",
+    "thigh_circumference": "thigh left circumference",
+    "calf_circumference": "calf left circumference",
+    "ankle_circumference": "ankle left circumference",
+    "shoulder_breadth": "shoulder breadth",
+    "height": "height",
 }
 
 
