@@ -13,7 +13,7 @@ class UserInput(BaseModel):
     gender: str = Field(..., description="MALE, FEMALE or OTHER")
 
 
-@app.post("/userMeasurements")
+@app.post("v1/userMeasurements")
 async def measure_body(
     image: UploadFile = File(...),
     height: float = Form(...),

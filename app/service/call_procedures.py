@@ -40,4 +40,4 @@ def call_procedures(
     # === Cleanup ===
     os.remove(temp_image_path)
 
-    return measurements
+    return measurements 
