@@ -40,7 +40,4 @@ def call_procedures(
     # === Cleanup ===
     os.remove(temp_image_path)
 
-    return {
-        "measurements": measurements,
-        # "depth_map": depth_map.tolist()
-    }
+    return measurements
