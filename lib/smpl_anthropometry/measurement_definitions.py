@@ -9,7 +9,7 @@ STANDARD_LABELS = {
     "hipCircumference": "hip circumference",
     "wristCircumference": "wrist right circumference",
     "bicepCircumference": "bicep right circumference",
-    "forarmCircumference": "forearm right circumference",
+    "forearmCircumference": "forearm right circumference",
     "armLength": "arm right length",
     "insideLegHeight": "inside leg height",
     "thighCircumference": "thigh left circumference",
