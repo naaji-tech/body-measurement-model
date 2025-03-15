@@ -13,7 +13,7 @@ class UserInput(BaseModel):
     gender: str = Field(..., description="MALE, FEMALE or OTHER")
 
 
-@app.post("v1/userMeasurements")
+@app.post("/v1/userMeasurements")
 async def measure_body(
     image: UploadFile = File(...),
     height: float = Form(...),
@@ -26,7 +26,7 @@ async def measure_body(
     """
     try:
         # === Input validation ===
-        if not image:
+        if image.filename == "" and image.size == 0:
             raise HTTPException(status_code=400, detail="No image file provided")
 
         if (
