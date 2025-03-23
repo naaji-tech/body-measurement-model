@@ -6,8 +6,6 @@ from fastapi import UploadFile
 
 from app.procedures.extract_beta import extract_beta
 from app.procedures.calculate_measurements import calculate_measurements
-# from app.procedures.estimate_depth import estimate_depth
-# from app.procedures.process_image import process_image
 
 
 def call_procedures(
@@ -25,19 +23,13 @@ def call_procedures(
     # === Log header parameters ===
     print(f"Height: {height}, Weight: {weight}, Age: {age}")
 
-    # === Process image and extract keypoints ===
-    # frames, keypoints = process_image(temp_image_path)
-
-    # === Estimate depth from first frame ===
-    # depth_map = estimate_depth(frames)
-
     # === Extract the beta parameters ===
     betas = extract_beta(temp_image_path)
 
     # === Calculate body measurements ===
     measurements = calculate_measurements(height, gender, betas)
 
-    # === Cleanup ===
+    # === Cleanup temp image ===
     os.remove(temp_image_path)
 
     return measurements 
