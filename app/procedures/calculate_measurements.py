@@ -6,14 +6,14 @@ from lib.smpl_anthropometry.measurement_definitions import STANDARD_LABELS
 def calculate_measurements(user_height: float, user_gender: str, betas: torch.tensor) -> dict:
     '''
     description:
-    - Calculate body measurements from a given height and body shape using the SMPL body model
-    - The measurements are normalized to the given height
+        - Calculate body measurements from a given height and body shape using the SMPL body model
+        - The measurements are normalized to the given height
     parameters:
-    - user_height: float
-    - user_gender: str
-    - betas: torch.tensor
+        - user_height: float
+        - user_gender: str
+        - betas: torch.tensor
     returns:
-    - dict: A dictionary of labeled measurements
+        - dict: A dictionary of labeled measurements
     '''
     print("Measuring smpl body model...")
     measurer = MeasureBody('smpl')

@@ -12,7 +12,9 @@ from lib.spin import constants
 
 
 def _bbox_from_openpose(openpose_file, rescale=1.2, detection_thresh=0.2):
-    """Get center and scale for bounding box from openpose detections."""
+    """
+    Get center and scale for bounding box from openpose detections.
+    """
     with open(openpose_file, "r") as f:
         keypoints = json.load(f)["people"][0]["pose_keypoints_2d"]
     keypoints = np.reshape(np.array(keypoints), (-1, 3))
@@ -27,7 +29,8 @@ def _bbox_from_openpose(openpose_file, rescale=1.2, detection_thresh=0.2):
 
 
 def _bbox_from_json(bbox_file):
-    """Get center and scale of bounding box from bounding box annotations.
+    """
+    Get center and scale of bounding box from bounding box annotations.
     The expected format is [top_left(x), top_left(y), width, height].
     """
     with open(bbox_file, "r") as f:
